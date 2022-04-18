@@ -21,6 +21,7 @@ ssh bznode@54.166.151.240 'rm -rvf /var/www/keyshel/*'
 echo "Rsync build"
 rsync -avzP dist/keyshell/* bznode@54.166.151.240:/var/www/keyshel/"
 
-if [ $? = 0 ]; then
+if [ $? = 0 ];
+        then
 	echo "Deployed the App Successfully"
 	fi
