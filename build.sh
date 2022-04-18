@@ -16,7 +16,7 @@ echo "Building Applictions"
 ng build --base-href / || exit 1
 
 echo "Dropping old apps from EC2"
-sudo ssh bznode@54.166.151.240 'rm -rvf /var/www/keyshel/*'
+ssh bznode@54.166.151.240 'sudo rm -rvf /var/www/keyshel/*'
 
 echo "Rsync build"
 sudo rsync -avzP dist/keyshell/* bznode@54.166.151.240:/var/www/keyshel/
