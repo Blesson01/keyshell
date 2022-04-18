@@ -10,7 +10,7 @@ npm install || exit 1
 #rm -rvf dist/*
 
 echo "ng install"
-npm install -g @angular/cli
+#npm install -g @angular/cli
 
 echo "Building Applictions"
 ng build --base-href / || exit 1
