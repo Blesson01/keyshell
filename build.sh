@@ -19,7 +19,7 @@ echo "Dropping old apps from EC2"
 ssh bznode@54.166.151.240 'rm -rvf /var/www/keyshel/*'
 
 echo "Rsync build"
-rsync -avzP dist/keyshell/* bznode@54.166.151.240:/var/www/keyshel/"
+rsync -avzP dist/keyshell/* bznode@54.166.151.240:/var/www/keyshel/
 
 if [ $? = 0 ];
         then
